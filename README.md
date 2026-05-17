@@ -1,10 +1,33 @@
-Instrucciones:
+=============================================
+Ejecución de prueba 
+=============================================
 
-- Crear  un entorno de usuario .venv mediante el siguiente comando
-	python3 -m venv .venv
-- Activar el entorno de usuario con el comando
-	source .venv/bin/activate
-- Instalar las bibliotecas necesarias para el funcionamiento del programa
-	pip install requirements
+REQUISITOS PREVIOS
+  - Python 3.8 o superior instalado
+  - Tener el proyecto clonado localmente
 
-- Para poder iniciar un repositorio ingresa el comando
+PASOS PARA EJECUTAR
+
+  1. Abrir terminal en la carpeta raíz del proyecto
+
+  2. Crear entorno virtual:
+        python3 -m venv .venv
+
+  3. Activar entorno virtual:
+        Linux/macOS:  source .venv/bin/activate
+        Windows:      .venv\Scripts\activate
+
+  4. Instalar dependencias:
+        pip install -r requirements.txt
+
+  5. Correr las pruebas:
+        pytest tests/ -v
+
+  6. Verificar que todas dicen PASSED en la salida
+
+INTERPRETACIÓN DE RESULTADOS
+  PASSED → el caso de prueba pasó correctamente
+  FAILED → encontró un error, revisar el mensaje debajo
+  ERROR  → el test no pudo ejecutarse, problema en el código del test
+
+  **Nota: Si vamos a probarlo igual de manera manual (hacer commits, ver versiones, etc) poner los comandos necesarios 
