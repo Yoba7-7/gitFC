@@ -14,11 +14,14 @@ def verificar_repo():
 	Se hace una revisión para verficar si un repositorio
 	(directorio .gitfc) se ha creado o no se ha creado
 	'''
+	estado = ""
 	if not REPO_PATH.exists():
 		print("No existe un repositorio")
-		return
-	
+		estado = "No existe un repositorio"
+		return estado
 	print("Repositorio activo")
+	estado = "Repositorio activo"
+	return estado
 
 def archivos_rastreados():
 	'''
