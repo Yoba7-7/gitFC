@@ -2,6 +2,9 @@ import json
 from pathlib import Path
 
 REPO_PATH = Path(".gitfc")
+ARCHIVOS_RASTREADOS = Path(".git/archivos_rastreados.json")
+HISTORIAL = Path(".gitfc/historial.json")
+
 
 def mostrar_status():
 	verificar_repo()
