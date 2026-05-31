@@ -64,7 +64,7 @@ Para que estos comandos funcionen de manera correcta nos tenemos que dirigir a l
   python3 main.py checkout <version>
 
 #### Nota
-deff y checkout aceptan tanto IDs de commit como nombres de baseline. Consultar manual de usuario en caso de confución 
+deff y checkout aceptan tanto IDs de commit como nombres de baseline. Para obtener más información y ejemplos de uso, consulte el Manual de Usuario.
 
 ## Test 
 - Para ejecutar los test dirigete a la carpeta raíz (gitfc) y ejecuta los comandos:
