@@ -6,6 +6,8 @@ from staging import *
 from commit import *
 from historial import *
 from baseline import *
+from diff import *
+from checkout import *
 
 parser = argparse.ArgumentParser()
 
@@ -35,5 +37,12 @@ elif args.command == "baseline":
 
 elif args.command == "listar_baselines":
 	listar_baselines()
+
+elif args.command == "diff":
+    mostrar_diff(args.arg1, args.arg2)
+
+elif args.command == "checkout":
+    hacer_checkout(args.arg1)
+	
 else:
 	print("Comando no valido")
