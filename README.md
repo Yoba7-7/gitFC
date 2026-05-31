@@ -55,7 +55,7 @@ Para que estos comandos funcionen de manera correcta nos tenemos que dirigir a l
   python3 main.py baseline <version>
 - Para poder revisar las lineas base creadas ingresa el comando 
   ```bash
-  python3 main listar_baselines
+  python3 main.py listar_baselines
 
 ## Test 
 - Para ejecutar los test dirigete a la carpeta raíz (gitfc) y ejecuta los comandos:
