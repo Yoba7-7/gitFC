@@ -58,14 +58,13 @@ Para que estos comandos funcionen de manera correcta nos tenemos que dirigir a l
   python3 main.py listar_baselines
 - Para ver cambios entre versiones ingresa el comando 
   ```bash
-  python3 main.py diff commit_001 commit_002
-  python3 main.py diff v1.0 v1.1
+  python3 main.py diff <version1> <version2>
 - Para regresar a una versión específica ingresa el comando 
   ```bash
-  python3 main.py checkout commit_002
-  python3 main.py checkout v1.0
+  python3 main.py checkout <version>
 
-deff y checkout aceptan tanto IDs de commit como nombres de baseline, es decir ambos comandos funcionan.
+#### Nota
+deff y checkout aceptan tanto IDs de commit como nombres de baseline. Consultar manual de usuario en caso de confución 
 
 ## Test 
 - Para ejecutar los test dirigete a la carpeta raíz (gitfc) y ejecuta los comandos:
