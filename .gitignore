@@ -1,0 +1,10 @@
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Caché de Pytest
+.pytest_cache/
+
+# Entorno de pruebas falso de GitFC (por si acaso)
+.gitfc/
+.gitfc_backup/

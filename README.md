@@ -67,8 +67,7 @@ Para que estos comandos funcionen de manera correcta nos tenemos que dirigir a l
 deff y checkout aceptan tanto IDs de commit como nombres de baseline. Para obtener más información y ejemplos de uso, consulte el Manual de Usuario.
 
 ## Test 
-- Para ejecutar los test dirigete a la carpeta raíz (gitfc) y ejecuta los comandos:
+- Para ejecutar los test dirigete a la carpeta raíz (gitfc) y ejecuta el comando:
    ```bash
-	* python3 -m pytest test/test_repositorio.py
-	* python3 -m pytest test/test_status.py
+	* python3 -m pytest test/ -v
 
