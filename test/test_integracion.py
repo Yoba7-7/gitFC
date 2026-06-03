@@ -1,3 +1,4 @@
+import os
 import json
 import shutil
 import pytest
@@ -30,6 +31,24 @@ def entorno_integracion():
 
     if Path(archivo).exists():
         Path(archivo).unlink()
+
+@pytest.fixture(autouse=True)
+def limpiar_archivos():
+
+    yield
+
+    # Archivos temporales
+    for archivo in [
+        "archivo.txt",
+        "documento.txt",
+        "error.txt"
+    ]:
+        if Path(archivo).exists():
+            os.remove(archivo)
+
+    # Repositorio temporal
+    if Path(".gitfc").exists():
+        shutil.rmtree(".gitfc")
 
 
 def test_flujo_completo(entorno_integracion, capsys):
