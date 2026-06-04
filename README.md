@@ -35,6 +35,9 @@ otro nombre <br>
 
 Para que estos comandos funcionen de manera correcta nos tenemos que dirigir a la carpeta src, si estamos trabajando dentro de windows puede que nos genere un error si colocamos python3, en este caso sólo colocar python, por ejemplo: python main.py init
 
+- Para ver los comandos que tenemos disponibles y cómo mandarlos llamar
+  ```bash
+  python3 main.py help
 - Para poder iniciar un repositorio ingresa el comando 
   ```bash
   python3 main.py init
