@@ -4,7 +4,7 @@
 
 ## Integrantes:<br>
 Martínez Hidalgo Paola Mildred - 319300217<br>
-otro nombre <br>
+Méndez Ávila Luis Geovanni - 317143980 <br>
 otro nombre <br>
 
 # Instrucciones:
