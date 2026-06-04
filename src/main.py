@@ -43,6 +43,23 @@ elif args.command == "diff":
 
 elif args.command == "checkout":
     hacer_checkout(args.arg1)
-	
+
+elif args.command == "help":
+	print("""
+Comandos disponibles:
+================================================================================
+  Comando                        Descripcion
+================================================================================
+  python3 main.py init              Inicializar un nuevo repositorio
+  python3 main.py status            Ver estado actual del repositorio
+  python3 main.py add <archivo>     Agregar un archivo al rastreo
+  python3 main.py commit "msg"      Guardar una nueva version
+  python3 main.py historial         Consultar el historial de commits
+  python3 main.py baseline <n>      Crear una linea base en el ultimo commit
+  python3 main.py listar_baselines  Listar todas las lineas base
+  python3 main.py diff <v1> <v2>    Ver diferencias entre dos versiones
+  python3 main.py checkout <v>      Restaurar archivos de una version anterior
+================================================================================
+	   """)
 else:
 	print("Comando no valido")
